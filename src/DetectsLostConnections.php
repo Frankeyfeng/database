@@ -51,6 +51,8 @@ trait DetectsLostConnections
             // SSL: Connection timed out
             // SQLSTATE[HY000] [2002] Connection timed out
             'timed out',
+            // SQLSTATE[HY000]: General error: 1815 Internal error
+            'Connection is closed',
         ]);
     }
 }
